@@ -9,7 +9,6 @@ Rule::Rule(const std::string& string) {
 }
 
 Rule::Rule(const Rule& other_rule) {
-  // оператор кописрования
   terminal_ = other_rule.terminal_;
   rule_.resize(other_rule.rule_.size());
   for (int i = 0; i < other_rule.rule_.size(); i++) {
